@@ -1,0 +1,5 @@
+<div>
+  <h2>Najnowsze na blogu</h2>
+  <my-search (requestFilterByPhrase)="filterPosts($event)"></my-search>
+  <p class="post" *ngFor="let post of postsToDisplay">{{ post }}</p>
+</div>

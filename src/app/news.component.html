@@ -1,0 +1,13 @@
+<div>
+  <h2>Wiadomości</h2>
+  <my-search (requestFilterByPhrase)="filterNews($event)"></my-search>
+  <div class="news" *ngFor="let news of newsToDisplay">
+    <div class="row">
+      <img src="https://via.placeholder.com/150" alt="News image">
+      <div class="column">
+        <h3 class="news-head">{{ news.head }}</h3>
+        <span class="news-head">{{ news.lead }}</span>
+      </div>
+    </div>
+  </div>
+</div>

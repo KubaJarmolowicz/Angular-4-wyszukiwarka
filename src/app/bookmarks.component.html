@@ -1,0 +1,5 @@
+<div>
+  <h2>Twoje zakładki</h2>
+  <my-search (requestFilterByPhrase)="filterBookMarks($event)"></my-search>
+  <p *ngFor="let bookmark of bookmarksToDisplay">{{ bookmark }}</p>
+</div>
